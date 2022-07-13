@@ -1,0 +1,76 @@
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover{
+    color: red;
+}
+
+.fa-house{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(bg.png);
+    height: 132px;
+}
+
+.header{
+    margin: 12px 0 0 12px;
+    list-style: none;
+    font-size: 16px;
+    gap: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo{
+    width: 150px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 010px;
+}
+
+nav ul li a{
+    color: black;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas: 
+    "house "
+    "main "
+    "footer "
+    ;
+}
+
+
+/* main body */
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+main .middle-pic{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* footer */
+
+
+
