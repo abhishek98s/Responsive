@@ -79,6 +79,274 @@ footer{
 
 /* footer */
 
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover{
+    color: red;
+}
+
+.fa-house{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(bg.png);
+    height: 132px;
+}
+
+.header{
+    margin: 12px 0 0 12px;
+    list-style: none;
+    font-size: 16px;
+    gap: 10px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo{
+    width: 150px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 010px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 12px 0 0;
+    border-right: solid 3px black;
+    font: 11px Verdana;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: 'BrandonGrotesqueBoldRegular';
+}
+
+body{
+    display: grid;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas: 
+    "house "
+    "main "
+    "footer "
+    ;
+}
+
+
+/* main body */
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+main .middle-pic{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* footer */
+footer{
+    display: grid;
+    grid-template-columns: 0.7fr 6fr 0.7fr;
+    grid-template-areas: ". ee .";
+    align-items: center;
+}
+
+.item1{
+    grid-area: ee;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "line line"
+    "media1 media"
+    ". .";
+    gap: 20px;
+}
+
+.sperator-line{
+    grid-area: line;
+    height: 2px;
+    background: black;
+
+}
+
+.insta{
+    display: flex;
+    justify-content: end;
+    grid-area: media1;
+}
+
+.fb{
+    grid-area: media;
+
+}
+
+.fa-instagram, .fa-facebook{
+    margin-right: 10px;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'ArnoProItalic';
+}
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    a:hover{
+        color: red;
+    }
+    
+    body{
+        display: grid;
+        grid-template-rows: 0.7fr 3.3fr 60px;
+    }
+    
+    .header{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        grid-template-areas: "ww ee logo .";
+        background: url(bg.png);
+        height: 132px;
+    }
+    
+    nav ul a .fa-house{
+        border-right: solid 3px black;
+        margin-right: 5px;
+        padding-right: 12px;
+    }
+    
+    nav .logo{
+        width: 215px;
+        height: 68px;
+        display: flex;
+        justify-self: end;
+        align-self: center;
+        margin-right: 15px;  
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 0 12px 0 0;
+        border-right: solid 3px black;
+        font: 11px Verdana;
+        letter-spacing: 0.15em;
+        font-size: 100%;
+        text-transform: uppercase;
+        font-family: 'BrandonGrotesqueBoldRegular';
+    }
+    
+    nav ul{
+        list-style: none;
+    }
+    
+    /*mid-section*/
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .middle-pic{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    
+    /* footer */
+    footer{
+        display: grid;
+        grid-template-columns: 0.7fr 6fr 0.7fr;
+        grid-template-areas: ". ee .";
+        align-items: center;
+    }
+    
+    .item1{
+        grid-area: ee;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "line line"
+        "media1 media"
+        ". .";
+        gap: 20px;
+    }
+    
+    .sperator-line{
+        grid-area: line;
+        height: 2px;
+        background: black;
+    
+    }
+    
+    .insta{
+        display: flex;
+        justify-content: end;
+        grid-area: media1;
+    }
+    
+    .fb{
+        grid-area: media;
+    
+    }
+    
+    .fa-instagram, .fa-facebook{
+        margin-right: 10px;
+    }
+    
+    footer ul{
+        list-style: none;
+    }
+    footer ul li a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-size: 16px;
+        font-family: 'ArnoProItalic';
+    }    
+}
+
+
+
+
 @media screen and (min-width: 1000px) {
     *{
         padding: 0;
